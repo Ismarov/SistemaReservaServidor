@@ -6,14 +6,16 @@ public class HoraMedicaVo {
 	private int id;
 	private MedicoVo medicovo;
 	private BoxVo boxvo;
-	private Date f_inicio;
-	private Date f_fin;
+	private Date finicio;
+	private Date ffin;
 	
 	public HoraMedicaVo(int id, MedicoVo medicovo, BoxVo boxvo, Date f_inicio, Date f_fin) {
 		super();
 		this.id = id;
 		this.medicovo = medicovo;
 		this.boxvo = boxvo;
+		this.finicio = f_inicio;
+		this.ffin = ffin;
 	}
 	
 	public int getId(){
@@ -28,12 +30,12 @@ public class HoraMedicaVo {
 		return boxvo;
 	}
 
-	public Date getF_inicio() {
-		return f_inicio;
+	public Date getFinicio() {
+		return finicio;
 	}
 
-	public Date getF_fin() {
-		return f_fin;
+	public Date getFfin() {
+		return ffin;
 	}
 	
 	public static HoraMedicaVo fromORM(orm.Hora_medica h){
